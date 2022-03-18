@@ -10,6 +10,9 @@ html {
 
 #main {
 }
+.clear {
+  clear: both;
+}
 
 #header {
   height: 46px;
@@ -145,6 +148,26 @@ html {
   margin-top: 25px;
   text-align: justify; /*can deu 2 ben*/
   line-height: 1.4; /*khoang cach giua 2 dong*/
+}
+
+#content .member-list {
+  margin-top: 47px;
+}
+
+#content .member-item {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+}
+
+#content .member-name {
+  font-size: 15px;
+}
+
+#content .member-img {
+  margin-top: 15px;
+  width: 154px;
+  border-radius: 4px; /*bo goc*/
 }
 
 #footer {
