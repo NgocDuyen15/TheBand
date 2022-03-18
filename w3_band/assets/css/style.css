@@ -254,3 +254,91 @@ html {
 /* Footer-section */
 #footer {
 }
+
+.modal.open {
+  display: flex;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.modal-header {
+  background-color: #009688;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.modal-container {
+  background-color: #fff;
+  width: 900px;
+  max-width: calc(100% - 32px);
+  min-height: 200px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  padding: 16px;
+  cursor: pointer; /*hinh ban tay*/
+}
+.modal-close:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.modal-heading-icon {
+  margin-right: 16px;
+}
+
+.modal-body {
+  padding: 16px;
+}
+.modal-label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.modal-input {
+  font-size: 15px;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+#buy-tickets {
+  background-color: #009688;
+  border: none;
+  width: 100%;
+  padding: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+}
+#buy-tickets:hover {
+  opacity: 0.9;
+}
+.modal-footer {
+  text-align: right;
+  font-size: 16px;
+  padding: 10px;
+}
+.modal-footer a {
+  color: blue;
+}
