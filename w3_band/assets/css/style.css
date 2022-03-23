@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 html {
+  scroll-behavior: smooth; /*hanh dong cuon*/
   font-family: sans-serif;
 }
 
@@ -20,9 +21,33 @@ html {
 .text-center {
   text-align: center !important;
 }
+.pull-right {
+  float: right !important;
+}
+.btn {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 15px;
+  border: none;
+  border: none;
+}
+
+.btn:hover {
+  color: #000;
+  cursor: pointer;
+  background-color: #ccc;
+}
 .row {
   margin-left: -8px;
   margin-right: -8px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .col {
   float: left;
@@ -34,6 +59,16 @@ html {
 }
 .col-third {
   width: 33.33333%;
+}
+.col-full {
+  width: 100%;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+.mt-16 {
+  margin-top: 16px !important;
 }
 /*main*/
 #header {
@@ -147,7 +182,7 @@ html {
 
 #content .content-section {
   width: 800px;
-  padding: 64px 0;
+  padding: 64px 0 112px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -165,6 +200,7 @@ html {
   font-style: italic; /*chu in nghieng*/
   opacity: 0.6; /*do trong suot*/
 }
+
 #content .about-text {
   font-size: 15px;
   margin-top: 25px;
@@ -220,7 +256,6 @@ html {
 /* Places */
 .places-list {
   margin-top: 32px;
-  margin-bottom: 48px;
 }
 
 .place-img {
@@ -247,25 +282,59 @@ html {
   margin-top: 15px;
   line-height: 1.4;
 }
-.place-buy-btn {
-  color: #fff;
-  background-color: #000;
-  text-decoration: none;
-  padding: 11px 16px;
+
+/* Contact from */
+.contact-content {
+  margin-top: 48px;
+}
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.contact-info i[class*="ti-"] {
+  width: 30px;
   display: inline-block;
-  margin-top: 15px;
-  border: none;
+}
+.contact-form {
+  font-size: 15px;
+}
+.contact-form .form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
 }
 
-.place-buy-btn:hover {
-  color: #000;
-  background-color: #ccc;
+/* map section */
+.map-section img {
+  width: 100%;
+  filter: grayscale(50%);
 }
-
 /* Footer-section */
 #footer {
+  padding: 64px 15px;
+  text-align: center;
+}
+#footer .socials-list {
+  font-size: 24px;
+}
+#footer .socials-list a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+#footer .coppyright a:hover,
+#footer .socials-list a:hover {
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+#footer .coppyright {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#footer .coppyright a {
+  color: rgba(0, 0, 0, 0.6);
 }
 
+/* Modal */
 .modal.open {
   display: flex;
 }
