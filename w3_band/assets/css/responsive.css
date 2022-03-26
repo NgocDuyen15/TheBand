@@ -1,0 +1,33 @@
+/* Mobile */
+@media (max-width: 740px) {
+  #header {
+    overflow: hidden; /*ẩn con bị lòi ra khỏi thằng cha*/
+  }
+  #header .mobile-menu-btn {
+    display: block;
+  }
+  #header .search-btn {
+    display: none;
+  }
+  #nav {
+    display: block;
+  }
+  #nav > li {
+    display: block;
+  }
+  #nav > li:first-child {
+    /*Psudo class-chon the li dau tien*/
+    display: inline-block;
+  }
+  #nav li a {
+    padding: 1px 24px;
+  }
+  #nav .subnav {
+    position: initial;
+    background-color: #333;
+  }
+  #nav .subnav a {
+    color: #fff;
+    padding: 17px 41px;
+  }
+}
