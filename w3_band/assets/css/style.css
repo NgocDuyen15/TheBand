@@ -33,6 +33,7 @@ html {
   margin-top: 15px;
   border: none;
   border: none;
+  text-align: center;
 }
 
 .btn:hover {
@@ -69,6 +70,9 @@ html {
 }
 .mt-16 {
   margin-top: 16px !important;
+}
+.mt-32 {
+  margin-top: 32px;
 }
 /*main*/
 #header {
