@@ -45,7 +45,7 @@
     display: block;
   }
   #nav > li:first-child {
-    /*Psudo class-chon the li dau tien*/
+    /*Pseudo class-chon the li dau tien*/
     display: inline-block;
   }
   #nav li a {
